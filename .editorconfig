@@ -1,0 +1,32 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.cs]
+max_line_length = 184
+
+csharp_prefer_braces = true:warning
+
+# Prefer always expression body in C# files
+csharp_style_expression_bodied_properties = true:warning
+csharp_style_expression_bodied_methods = true:warning
+csharp_style_expression_bodied_constructors = true:warning
+csharp_style_expression_bodied_operators = true:warning
+csharp_style_expression_bodied_accessors = true:warning
+csharp_style_expression_bodied_lambdas = true:warning
+csharp_style_expression_bodied_local_functions = true:warning
+
+# XML documentation settings for C# files
+resharper_xmldoc_indent_text = zero_indent # disables text indenting within documentation comments (like summary tags)
+
+[*.{csproj,json,md,nuspec,yml,props}]
+indent_size = 2
+
+[*.{sln,xml}]
+indent_style = tab
